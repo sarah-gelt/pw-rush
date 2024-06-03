@@ -33,10 +33,10 @@ export default defineConfig({
   /* Configure projects for major browsers */
   projects: [
     {
-      name: "setup-married",
+      name: "setup-watch",
       testMatch: ["**/*.setup.ts"],
       teardown: "teardown",
-      outputDir: "test-results/static-married"
+      outputDir: "test-results/watch-mode"
     },
     {
       name: "teardown",
@@ -44,13 +44,13 @@ export default defineConfig({
       outputDir: "test-results/teardown"
     },
     {
-      name: "chromium-married",
+      name: "watch-tests",
       use: {
         ...devices["Desktop Chrome"],
         viewport: { width: 1280, height: 768 },
       },
-      dependencies: ["setup-married"],
-      outputDir: "test-results/chrome-static-married"
+      dependencies: ["setup-watch"],
+      outputDir: "test-results/watch-mode"
     }
   ]
   /* Run your local dev server before starting the tests */
