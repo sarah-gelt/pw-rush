@@ -7,11 +7,15 @@ importers:
 
   ../../automation/pw-watch-mode:
     specifiers:
-      '@playwright/test': ^1.44.0
-      '@types/node': ^20.12.12
+      '@playwright/test': ^1.43.1
+      '@types/node': ^20.14.0
+      dotenv: ^16.0.1
+      typescript: ~5.2.2
     devDependencies:
       '@playwright/test': 1.44.1
       '@types/node': 20.14.0
+      dotenv: 16.4.5
+      typescript: 5.2.2
 
 packages:
 
@@ -27,6 +31,11 @@ packages:
     resolution: {integrity: sha512-5cHBxFGJx6L4s56Bubp4fglrEpmyJypsqI6RgzMfBHWUJQGWAAi8cWcgetEbZXHYXo9C2Fa4EEds/uSyS4cxmA==}
     dependencies:
       undici-types: 5.26.5
+    dev: true
+
+  /dotenv/16.4.5:
+    resolution: {integrity: sha512-ZmdL2rui+eB2YwhsWzjInR8LldtZHGDoQ1ugH85ppHKwpUHL7j7rN0Ti9NCnGiQbhaZ11FpR+7ao1dNsmduNUg==}
+    engines: {node: '>=12'}
     dev: true
 
   /fsevents/2.3.2:
@@ -50,6 +59,12 @@ packages:
       playwright-core: 1.44.1
     optionalDependencies:
       fsevents: 2.3.2
+    dev: true
+
+  /typescript/5.2.2:
+    resolution: {integrity: sha512-mI4WrpHsbCIcwT9cF4FZvr80QUeKvsUsUvKDoR+X/7XHQH98xYD8YHZg7ANtz2GtZt/CBq2QJ0thkGJMHfqc1w==}
+    engines: {node: '>=14.17'}
+    hasBin: true
     dev: true
 
   /undici-types/5.26.5:

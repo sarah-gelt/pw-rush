@@ -51,6 +51,25 @@ export default defineConfig({
       },
       dependencies: ["setup-watch"],
       outputDir: "test-results/watch-mode"
+    },
+    {
+      name: "setup-watch-firefox",
+      testMatch: ["**/*.setup.ts"],
+      teardown: "teardown",
+      outputDir: "test-results/watch-mode",
+      use: {
+        ...devices["Desktop Firefox"],
+        viewport: { width: 1280, height: 768 },
+      },
+    },
+    {
+      name: "watch-tests-firefox",
+      use: {
+        ...devices["Desktop Firefox"],
+        viewport: { width: 1280, height: 768 },
+      },
+      dependencies: ["setup-watch"],
+      outputDir: "test-results/watch-mode"
     }
   ]
   /* Run your local dev server before starting the tests */

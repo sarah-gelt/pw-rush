@@ -5,7 +5,9 @@
     "build": "echo SKIPPED - no need to build"
   },
   "devDependencies": {
-    "@playwright/test": "^1.44.0",
-    "@types/node": "^20.12.12"
+    "@playwright/test": "^1.43.1",
+    "typescript": "~5.2.2",
+    "@types/node": "^20.14.0",
+    "dotenv": "^16.0.1"
   }
 }
