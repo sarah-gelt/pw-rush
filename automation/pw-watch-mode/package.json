@@ -1,4 +1,6 @@
 {
+  "name": "pw-watch-mode",
+  "version": "0.0.1",
   "devDependencies": {
     "@playwright/test": "^1.44.0",
     "@types/node": "^20.12.12"
