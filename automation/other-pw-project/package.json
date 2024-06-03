@@ -1,5 +1,5 @@
 {
-  "name": "pw-watch-mode",
+  "name": "other-pw-project",
   "version": "0.0.1",
   "scripts": {
     "build": "echo SKIPPED - no need to build"
